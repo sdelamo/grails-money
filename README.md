@@ -1,3 +1,5 @@
+**This plugin is a migration to Grails 3 plugins of the [Ticketbis Grails Money](https://github.com/ticketbis/grails-money) for Grails 2**
+
 # grails-money
 
 [![Build

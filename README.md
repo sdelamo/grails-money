@@ -1,5 +1,8 @@
 **This plugin is a migration to Grails 3 plugins of the [Ticketbis Grails Money](https://github.com/ticketbis/grails-money) for Grails 2**
 
+Status](https://travis-ci.org/sdelamo/grails-money.png?branch=master)](https://travis-ci.org/sdelamo/grails-money)
+
+
 # grails-money
 
 Grails plugin for money and currency exchange management

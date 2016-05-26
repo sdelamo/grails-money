@@ -2,9 +2,6 @@
 
 # grails-money
 
-[![Build
-Status](https://travis-ci.org/sdelamo/grails-money.png?branch=master)](https://travis-ci.org/sdelamo/grails-money)
-
 Grails plugin for money and currency exchange management
 
 ## Installation

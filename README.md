@@ -33,3 +33,32 @@ new Money('100 EUR') / 2 == new Money('50 EUR')
 new Money('100 EUR') * 2 == new Money('200 EUR')
 new Money('100 EUR') + new Money('20 EUR') == new Money('120 EUR')
 ```
+### Use it in domain classes
+
+```groovy
+import com.ticketbis.money.Money
+import com.ticketbis.money.MoneyUserType
+
+class ProductOffer implements Serializable {
+
+    Money price
+    Money oldPrice
+
+    static constraints = {
+    }
+
+    static mapping = {
+        price type: MoneyUserType, {
+            column name: "amount", sqlType: "numeric"
+            column name: "currency", nullable: true
+        }
+        oldPrice type: MoneyUserType, {
+            column name: "old_amount", sqlType: "numeric"
+            column name: "old_currency", nullable: true
+        }
+    }
+}
+```
+If you do not define the sqlType, the default sqlType
+for the amount column will be _Types.DECIMAL_ and for
+the currency column it will be _Types.VARCHAR_
